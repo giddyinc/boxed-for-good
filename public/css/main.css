@@ -8945,7 +8945,7 @@ textarea {
 .fa {
   margin-right: 6px; }
 
-p.boxed-main-copy, .form-input, .form-label, p.beneficiaries-header, p.hiw-header {
+p.boxed-main-copy, .form-input, .form-label, p.beneficiaries-header, p.hiw-header, p.step {
   text-align: center;
   color: white;
   font-family: sofia-pro, sans-serif;
@@ -9005,4 +9005,19 @@ p.hiw-header {
 
 svg {
   fill: white;
+}
+
+.step-1, .step-2, .step-3 {
+  float: left;
+  width: 33%;
+  padding-left: 120px;
+  padding-top: 10px;
+
+}
+
+p.step {
+  color: white;
+  font-size: 16px;
+  text-align: initial;
+  justify-content: center;
 }
