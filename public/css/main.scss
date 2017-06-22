@@ -186,9 +186,17 @@ p.hiw-header {
   background-color: #FFCA00;
   transition: background-color 0.5s;
   cursor: pointer;
+    #card-alt {
+      display: block;
+    }
   }
 
-
+.card:hover #img {
+  display: none;
+}
+.card:hover #donate {
+  display: none;
+}
 
 .card img {
   padding-top: 15px;
@@ -200,6 +208,13 @@ p.hiw-header {
   width: 100%;
   text-align: center;
 }
+
+#card-alt {
+  display: none;
+  text-align: center;
+  padding-top: 20px;
+}
+
 
 .donate-btn {
   font-family: sofia-pro, sans-serif;

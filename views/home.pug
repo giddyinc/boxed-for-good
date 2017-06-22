@@ -10,18 +10,24 @@ block content
       div(class='beneficiaries')
         p(class='beneficiaries-header') Our Beneficiaries
            div(class='cards')
-            div(class='card') Housing and Services Inc
-              img(src='/images/hsi-logo.png')
-              button(class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored donate-btn')
+            div(class='card' id='card-1') Housing and Services Inc
+              div(id='card-alt')
+               p Show Me
+              img(src='/images/hsi-logo.png' id='img')
+              button(class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored donate-btn' id='donate')
                 a(class='no-link' href='/donate') Select
-            div(class='card') City Harvest <br/>
-              img(src='/images/city-harvest.svg')
-              button(class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored donate-btn') 
+            div(class='card' id='card-2') City Harvest <br/>
+              img(src='/images/city-harvest.svg' id='img')
+              button(class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored donate-btn' id='donate') 
                 a(class='no-link' href='/donate') Select
-            div(class='card') Food Bank NYC
-              img(src='/images/foodbank.png')
-              button(class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored donate-btn') 
+              div(id='card-alt')
+                p This is some text about the organization.
+            div(class='card' id='card-3') Food Bank New York City
+              img(src='/images/foodbank.png' id='img')
+              button(class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored donate-btn' id='donate') 
                 a(class='no-link' href='/donate') Select
+              div(id='card-alt')
+                p Show Me
 
 
       div(class='how-it-works')
