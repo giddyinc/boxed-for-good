@@ -2,12 +2,13 @@
   text-align: center; }
   .header h1 {
     color: white;
-    font-size: 64px; }
+    font-size: 56px;
+    margin: 16px 0; }
 
 .beneficiary-info {
   background: #F54D87;
   font-size: 16px;
-  padding: 8px 16px;
+  padding: 12px 16px;
   margin: 16px 0;
   color: white;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.17); }
@@ -80,6 +81,11 @@
       font-weight: normal;
       color: #6D6D6D;
       display: block; }
+    .send-a-note .input-note textarea {
+      border: none;
+      font-weight: lighter;
+      width: 100%;
+      min-height: 128px; }
   .send-a-note .btn-give-now {
     background-color: #00B9A5;
     border: none;

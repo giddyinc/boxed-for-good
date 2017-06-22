@@ -5,14 +5,15 @@
 
   h1 {
     color: white;
-    font-size: 64px;
+    font-size: 56px;
+    margin: 16px 0;
   }
 }
 
 .beneficiary-info {
   background: $brand-pink;
   font-size: 16px;
-  padding: 8px 16px;
+  padding: 12px 16px;
   margin: 16px 0;
   color: white;
   // border: solid 1px #95989A;
@@ -112,18 +113,13 @@
       color: #6D6D6D;
       display: block;
     }
-  }
 
-  .btn-give-now {
-    background-color: $brand-green;
-    border: none;
-    border-radius: 48px;
-    min-height: 96px;
-    font-size: 48px;
-    color: white;
-    text-transform: uppercase;
-    padding: 0 96px;
-    font-weight: bold;
+    textarea {
+      border: none;
+      font-weight: lighter;
+      width: 100%;
+      min-height: 128px;
+    }
   }
 
   .clear {

@@ -75,6 +75,22 @@ textarea {
   margin-right: 6px;
 }
 
+// Buttons
+// -------------------------
+
+.btn-cta {
+  background-color: $brand-green;
+  border: none;
+  border-radius: 48px;
+  min-height: 96px;
+  font-size: 48px;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 96px;
+  line-height: 96px;
+  font-weight: bold;
+}
+
 .pull-left {
   float: left;
   color: white;
