@@ -153,7 +153,8 @@ p.hiw-header {
 }
 
 .card {
-  border: solid 1px gray;
+  border: solid 1px #d3d3d3;
+  border-radius: 2px;
   width: 25%;
   display: inline-block;
   height: 200px;
@@ -165,10 +166,17 @@ p.hiw-header {
 
 }
 
+.card:hover {
+  background-color: #FFCA00;
+  transition: background-color 0.5s;
+  cursor: pointer;
+  }
+
+
+
 .card img {
   padding-top: 15px;
 }
-
 
 .cards {
   width: 100%;
@@ -181,6 +189,7 @@ p.hiw-header {
   font-weight: 100;
   font-size: 14px;
   margin: 15px;
+  border-radius: 4px;
 }
 
 .no-link, a:hover {
