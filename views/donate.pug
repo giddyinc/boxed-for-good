@@ -1,27 +1,57 @@
 extends layout
 
+block styles
+  link(rel='stylesheet', href='/css/donate.css')
+
 block content
-  h1 Boxed For Good
-  p.lead A way to 
-  hr
-  .row
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+  .container
+    .header
+      h1 What Would You Like to Give?
+
+    .beneficiary-info
+      | Bundles will be shipped directly to Housing and Services Inc.
+
+    .bundle-choices
+      .bundle
+        img(src='/images/bundle-image.png', alt="Bundle 1")
+        h2 Bundle 1
+        h3 Feeds 2 hungry mouths
+      .bundle
+        img(src='/images/bundle-image.png', alt="Bundle 2")
+        h2 Bundle 2
+        h3 Feeds 4 hungry mouths
+      .bundle
+        img(src='/images/bundle-image.png', alt="Bundle 3")
+        h2 Bundle 3
+        h3 Feeds 8 hungry mouths
+    
+  .motivational-message
+    .container
       p
-        a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
+        | You'll get $5 in Boxed credits with this bundle.
+        br
+        | With this bundle, 4 hungry mouths will be fed.
+  
+  .send-a-note
+    .container
+      h1 Send A Note
+      .input-note
+        label Send A Note to Housing and Services Inc
+        textarea
+      button.btn-give-now
+        | Give Now
+    .clear
+
+  .endorsement
+    .container
+      .text-box
+        p
+          | "Thanks Boxed for delivering bulk-sized love
+          br
+          | to the community, it has helped us immensely."
+        p.attribution
+          | - Community Manager, Food Bank NYC
+  
+  .footer
+    .container
+      | Footer

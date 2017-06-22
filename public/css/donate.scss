@@ -1,0 +1,168 @@
+@import "themes/default/variables";
+
+.header {
+  text-align: center;
+
+  h1 {
+    color: white;
+    font-size: 64px;
+  }
+}
+
+.beneficiary-info {
+  background: $brand-pink;
+  font-size: 16px;
+  padding: 8px 16px;
+  margin: 16px 0;
+  color: white;
+  // border: solid 1px #95989A;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.17);
+}
+
+.bundle-choices {
+  display: flex;
+
+  .bundle {
+    position: relative;
+    flex: 1 1 auto;
+    margin: 0 8px;
+    padding: 16px;
+    background-color: white;
+    text-align: center;
+    border: solid 1px #95989A;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.17);
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: $brand-yellow;
+      transition: background-color 0.5s;
+      cursor: pointer;
+    }
+
+    img {
+      margin: 16px;
+      max-width: 80%;
+    }
+
+    h2 {
+      margin: 8px 0;
+      font-size: 44px;
+      color: #6D6D6D;
+    }
+
+    h3 {
+      margin: 8px 0;
+      font-size: 18px;
+      color: #6D6D6D;
+    }
+  }
+}
+
+.motivational-message {
+  background: white;
+  width: 100%;
+  min-height: 200px;
+  margin-top: -200px;
+  padding-top: 200px;
+
+  .container {
+    text-align: center;
+    color: $brand-green;
+
+    p {
+      margin: 48px;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 32px;
+    }
+  }
+}
+
+.send-a-note {
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: center;
+  padding: 32px 0;
+
+  h1 {
+    text-transform: uppercase;
+    color: #6D6D6D;
+    font-weight: bold;
+    margin: 16px 0;
+  }
+
+  .input-note {
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.17);
+    text-align: left;
+    padding: 16px;
+    margin: 32px 0;
+
+    label {
+      font-size: 16px;
+      font-weight: normal;
+      color: #6D6D6D;
+      display: block;
+    }
+  }
+
+  .btn-give-now {
+    background-color: $brand-green;
+    border: none;
+    border-radius: 48px;
+    min-height: 96px;
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 96px;
+    font-weight: bold;
+  }
+
+  .clear {
+    clear: both;
+  }
+}
+
+.endorsement {
+  background: url('/images/endorsement.jpg');
+  background-size: cover;
+  min-height: 821px;
+  width: 100%;
+
+  .container {
+    position: relative;
+
+    .text-box {
+      position: absolute;
+      right: 0;
+      top: 32px;
+      padding: 32px;
+      background: rgba(0, 0, 0, 0.67);
+      min-width: 50%;
+
+      p {
+        color: white;
+        font-size: 28px;
+        line-height: 36px;
+      }
+
+      p.attribution {
+        text-align: right;
+        margin-top: 64px;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $brand-green;
+  width: 100%;
+}
