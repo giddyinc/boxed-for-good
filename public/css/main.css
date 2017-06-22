@@ -9002,3 +9002,7 @@ p.hiw-header {
   margin: 0 auto;
   display: table;
 }
+
+svg {
+  fill: white;
+}
