@@ -3,7 +3,26 @@ extends layout
 block styles
   link(rel='stylesheet', href='/css/donate.css')
 
+block scripts
+  script(src='/js/donate.js')
+
 block content
+  #modal-sign-in-overlay.modal-sign-in-overlay
+    #modal-sign-in.modal-sign-in
+      .modal-title
+        img.logo(src='/images/boxed-logo-white.svg')
+        span.complete-donation Complete Your Donation
+      .modal-body
+        .input-group
+          label(for='input-email-address') Email Address
+          input#input-email-address(type='text')
+        .input-group
+          label(for='input-password') Password
+          input#input-password(type='password')
+        .or - OR -
+        button#btn-facebook.btn-cta.btn-facebook
+          | Continue with Facebook
+
   .container
     .header
       h1 What Would You Like to Give?
@@ -44,11 +63,11 @@ block content
   
   .send-a-note
     .container
-      form(action='/donate/done')
+      form#form-donate(action='/donate/done')
         h1 Send A Note
-        .input-note
-          label Send A Note to Housing and Services Inc
-          textarea(placeholder='Type a note\u2026')
+        .input-note.input-group
+          label(for='textarea-note') Send A Note to Housing and Services Inc
+          textarea#textarea-note(placeholder='Type a note\u2026')
         button.btn-cta(type='submit')
           | Give Now
     .clear
