@@ -8944,6 +8944,18 @@ textarea {
 .fa {
   margin-right: 6px; }
 
+.btn-cta {
+  background-color: #00B9A5;
+  border: none;
+  border-radius: 48px;
+  min-height: 96px;
+  font-size: 48px;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 96px;
+  line-height: 96px;
+  font-weight: bold; }
+
 .pull-left {
   float: left;
   color: white; }
@@ -9016,7 +9028,8 @@ p.step {
   justify-content: center; }
 
 .card {
-  border: solid 1px gray;
+  border: solid 1px #d3d3d3;
+  border-radius: 2px;
   width: 25%;
   display: inline-block;
   height: 200px;
@@ -9026,19 +9039,44 @@ p.step {
   vertical-align: middle;
   margin: 40px; }
 
+.card:hover {
+  background-color: #FFCA00;
+  transition: background-color 0.5s;
+  cursor: pointer; }
+  .card:hover #card-alt {
+    display: block; }
+
+.card:hover #img {
+  display: none; }
+
+.card:hover #donate {
+  display: none; }
+
 .card img {
-  padding-top: 15px; }
+  padding-top: 15px;
+  height: 50%;
+  width: 65%; }
 
 .cards {
   width: 100%;
   text-align: center; }
 
-.donate-btn {
+#card-alt {
+  display: none;
+  text-align: center;
+  padding-top: 4px; }
+
+.donate-btn, .alt-text {
   font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 100;
   font-size: 14px;
-  margin: 15px; }
+  margin: 15px;
+  border-radius: 4px; }
+
+.alt-text {
+  font-size: 12px;
+  margin: 8px; }
 
 .no-link, a:hover {
   text-decoration: none;
