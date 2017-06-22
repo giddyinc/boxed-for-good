@@ -16,8 +16,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
-
-
+  background-position:center;
    }
 
 article,
@@ -8946,7 +8945,7 @@ textarea {
 .fa {
   margin-right: 6px; }
 
-p.boxed-main-copy, .form-input, .form-label {
+p.boxed-main-copy, .form-input, .form-label, p.beneficiaries-header, p.hiw-header {
   text-align: center;
   color: white;
   font-family: sofia-pro, sans-serif;
@@ -8954,8 +8953,17 @@ p.boxed-main-copy, .form-input, .form-label {
   font-style: normal;
 }
 
-p.boxed-main-copy {
+p.boxed-main-copy, p.beneficiaries-header, .hiw-header {
   font-size: 24px;
+}
+
+p.beneficiaries-header {
+  color: black;
+  padding-top: 20px;
+}
+
+p.hiw-header {
+  padding-top: 20px;
 }
 
 .form-input {
@@ -8974,7 +8982,20 @@ p.boxed-main-copy {
   background-color: white;
   height: 300px;
   z-index: 999;
-  width: 100vw;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 500px;
+}
+
+.how-it-works {
+  background-color: #00B9A5;
+  height: 300px;
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 800px;
 }
 
 .search-field {
