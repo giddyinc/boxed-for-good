@@ -8982,7 +8982,7 @@ p.hiw-header {
 
 .beneficiaries {
   background-color: white;
-  height: 300px;
+  height: 400px;
   z-index: 999;
   position: absolute;
   width: 100%;
@@ -9003,6 +9003,7 @@ p.hiw-header {
   display: table; }
 
 .step-1, .step-2, .step-3 {
+  display: inline-block;
   float: left;
   width: 33%;
   padding-left: 120px;
@@ -9013,3 +9014,25 @@ p.step {
   font-size: 16px;
   text-align: initial;
   justify-content: center; }
+
+.card {
+  border: solid 1px gray;
+  width: 25%;
+  display: inline-block;
+  height: 25%;
+  text-align: center;
+  padding-top: 15px;
+  padding-right: 10px;
+  vertical-align: middle;
+  margin: 40px; }
+
+.cards {
+  width: 100%;
+  text-align: center; }
+
+.donate-btn {
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  margin: 15px; }
