@@ -8950,3 +8950,19 @@ p.boxed-main-copy {
   font-weight: 100;
   font-style: 
 }
+
+.form-input {
+  background-color: white;
+  border-color: transparent;
+  border-radius: 3px;
+}
+
+.form-label {
+  color: gray;
+
+}
+
+.beneficiaries {
+  color: #00B9A5;
+  height: 300px;
+}
