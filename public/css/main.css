@@ -15,6 +15,7 @@ body {
   background-image: url("/images/giving-min.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 1;
 
 
    }
@@ -5904,7 +5905,8 @@ button.close {
   float: right; }
 
 .pull-left {
-  float: left; }
+  float: left;
+  color: white; }
 
 .fa.pull-left {
   margin-right: .3em; }
@@ -8944,25 +8946,38 @@ textarea {
 .fa {
   margin-right: 6px; }
 
-p.boxed-main-copy {
+p.boxed-main-copy, .form-input, .form-label {
+  text-align: center;
   color: white;
   font-family: sofia-pro, sans-serif;
   font-weight: 100;
-  font-style: 
+  font-style: normal;
+}
+
+p.boxed-main-copy {
+  font-size: 24px;
 }
 
 .form-input {
   background-color: white;
   border-color: transparent;
   border-radius: 3px;
+  color: gray;
 }
 
 .form-label {
   color: gray;
-
+  margin-left: 10px;
 }
 
 .beneficiaries {
-  color: #00B9A5;
+  background-color: white;
   height: 300px;
+  z-index: 999;
+  width: 100vw;
+}
+
+.search-field {
+  margin: 0 auto;
+  display: table;
 }
