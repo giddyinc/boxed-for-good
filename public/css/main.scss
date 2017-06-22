@@ -115,11 +115,11 @@ p.boxed-main-copy, p.beneficiaries-header, p.hiw-header {
 }
 p.beneficiaries-header {  
   color: black;
-  padding-top: 20px;
+  padding-top: 45px;
 }
 
 p.hiw-header {  
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .form-input {  
@@ -145,7 +145,7 @@ p.hiw-header {
 }
 
 .how-it-works {  
-  background-color: #00B9A5;  height: 300px;  z-index: 999;  position: absolute;  width: 100%;  left: 0; top: 800px;
+  background-color: #00B9A5;  height: 300px;  z-index: 999;  position: absolute;  width: 100%;  left: 0; top: 900px;
 }
 
 .search-field {
@@ -172,7 +172,7 @@ p.hiw-header {
   border: solid 1px gray;
   width: 25%;
   display: inline-block;
-  height: 25%;
+  height: 200px;
   text-align: center;
   padding-top: 15px;
   padding-right: 10px;
@@ -180,6 +180,11 @@ p.hiw-header {
   margin: 40px;
 
 }
+
+.card img {
+  padding-top: 15px;
+}
+
 
 .cards {
   width: 100%;
@@ -192,4 +197,9 @@ p.hiw-header {
   font-weight: 100;
   font-size: 14px;
   margin: 15px;
+}
+
+.no-link, a:hover {
+  text-decoration: none;
+  color: white;
 }
