@@ -1,6 +1,12 @@
 extends layout
 block content  
       p(class='boxed-main-copy') Give More Today. 
-      p(class='boxed-main-copy') A one-stop subscription service where you can donate to a beneficiary of your choice, and Boxed will handle the rest of the giving process. 
+      p(class='boxed-main-copy') The brand new Boxed initiative for you.
       button(class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored donate-btn') Donate Today
+      form(action='#')
+        div(class='mdl-textfield mdl-js-textfield')
+          input(class='mdl-textfield__input form-input' type='text')
+          label(class='mdl-textfield__label form-label') Search Charities...
+
+      div(class='beneficiaries')
 
