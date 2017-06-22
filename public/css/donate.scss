@@ -18,6 +18,22 @@
   color: white;
   // border: solid 1px #95989A;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.17);
+
+  .more-info {
+    float: right;
+    background: none;
+    border: solid 1px white;
+    border-radius: 8px;
+    text-transform: uppercase;
+    padding: 4px 16px;
+    margin: -4px;
+    transition: all $animation-base-duration;
+
+    &:hover {
+      background: white;
+      color: $brand-pink;
+    }
+  }
 }
 
 .bundle-choices {
@@ -32,6 +48,7 @@
     text-align: center;
     border: solid 1px #95989A;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.17);
+    transition: background-color $animation-base-duration;
 
     &:first-child {
       margin-left: 0;
@@ -43,8 +60,34 @@
 
     &:hover {
       background-color: $brand-yellow;
-      transition: background-color 0.5s;
       cursor: pointer;
+    }
+
+    .price-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background-color: $brand-green;
+      width: 84px;
+      height: 84px;
+      border-radius: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .price, .price-mo {
+        color: white;
+      }
+
+      .price {
+        font-size: 32px;
+      }
+      
+      .price-mo {
+        position: absolute;
+        top: 52px;
+        right: 16px;
+      }
     }
 
     img {
