@@ -9039,3 +9039,7 @@ p.step {
   font-weight: 100;
   font-size: 14px;
   margin: 15px; }
+
+.no-link, a:hover {
+  text-decoration: none;
+  color: white; }

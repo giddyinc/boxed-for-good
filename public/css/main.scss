@@ -182,3 +182,8 @@ p.hiw-header {
   font-size: 14px;
   margin: 15px;
 }
+
+.no-link, a:hover {
+  text-decoration: none;
+  color: white;
+}
