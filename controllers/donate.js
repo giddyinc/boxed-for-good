@@ -7,3 +7,9 @@ exports.index = (req, res) => {
     title: 'Donate'
   });
 };
+
+exports.done = (req, res) => {
+  res.render('donate-done', {
+    title: 'Thank You'
+  });
+};

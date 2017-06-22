@@ -34,12 +34,13 @@ block content
   
   .send-a-note
     .container
-      h1 Send A Note
-      .input-note
-        label Send A Note to Housing and Services Inc
-        textarea
-      button.btn-give-now
-        | Give Now
+      form(action='/donate/done')
+        h1 Send A Note
+        .input-note
+          label Send A Note to Housing and Services Inc
+          textarea(placeholder='Type a note\u2026')
+        button.btn-cta(type='submit')
+          | Give Now
     .clear
 
   .endorsement
