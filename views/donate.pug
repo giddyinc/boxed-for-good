@@ -32,21 +32,21 @@ block content
       button.more-info More Info
 
     .bundle-choices
-      .bundle
+      .bundle(data-credits='$1', data-mouths='2')
         .price-badge
           .price $10
           .price-mo /mo
         img(src='/images/bundle-image.png', alt="Bundle 1")
         h2 Bundle 1
         h3 Feeds 2 hungry mouths
-      .bundle
+      .bundle(data-credits='$2', data-mouths='4')
         .price-badge
           .price $20
           .price-mo /mo
         img(src='/images/bundle-image.png', alt="Bundle 2")
         h2 Bundle 2
         h3 Feeds 4 hungry mouths
-      .bundle
+      .bundle(data-credits='$5', data-mouths='8')
         .price-badge
           .price $50
           .price-mo /mo
@@ -57,9 +57,7 @@ block content
   .motivational-message
     .container
       p
-        | You'll get $5 in Boxed credits with this bundle.
-        br
-        | With this bundle, 4 hungry mouths will be fed.
+        // Will be filled in on the JS side.
   
   .send-a-note
     .container
