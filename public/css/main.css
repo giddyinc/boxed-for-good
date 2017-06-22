@@ -9064,15 +9064,19 @@ p.step {
 #card-alt {
   display: none;
   text-align: center;
-  padding-top: 20px; }
+  padding-top: 4px; }
 
-.donate-btn {
+.donate-btn, .alt-text {
   font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 100;
   font-size: 14px;
   margin: 15px;
   border-radius: 4px; }
+
+.alt-text {
+  font-size: 12px;
+  margin: 8px; }
 
 .no-link, a:hover {
   text-decoration: none;
