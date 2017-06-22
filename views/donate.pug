@@ -3,7 +3,26 @@ extends layout
 block styles
   link(rel='stylesheet', href='/css/donate.css')
 
+block scripts
+  script(src='/js/donate.js')
+
 block content
+  #modal-sign-in-overlay.modal-sign-in-overlay
+    #modal-sign-in.modal-sign-in
+      .modal-title
+        img.logo(src='/images/boxed-logo-white.svg')
+        span.complete-donation Complete Your Donation
+      .modal-body
+        .input-group
+          label(for='input-email-address') Email Address
+          input#input-email-address(type='text')
+        .input-group
+          label(for='input-password') Password
+          input#input-password(type='password')
+        .or - OR -
+        button#btn-facebook.btn-cta.btn-facebook
+          | Continue with Facebook
+
   .container
     .header
       h1 What Would You Like to Give?
@@ -13,21 +32,21 @@ block content
       button.more-info More Info
 
     .bundle-choices
-      .bundle
+      .bundle(data-credits='$1', data-mouths='2')
         .price-badge
           .price $10
           .price-mo /mo
         img(src='/images/bundle-image.png', alt="Bundle 1")
         h2 Bundle 1
         h3 Feeds 2 hungry mouths
-      .bundle
+      .bundle(data-credits='$2', data-mouths='4')
         .price-badge
           .price $20
           .price-mo /mo
         img(src='/images/bundle-image.png', alt="Bundle 2")
         h2 Bundle 2
         h3 Feeds 4 hungry mouths
-      .bundle
+      .bundle(data-credits='$5', data-mouths='8')
         .price-badge
           .price $50
           .price-mo /mo
@@ -38,17 +57,15 @@ block content
   .motivational-message
     .container
       p
-        | You'll get $5 in Boxed credits with this bundle.
-        br
-        | With this bundle, 4 hungry mouths will be fed.
+        // Will be filled in on the JS side.
   
   .send-a-note
     .container
-      form(action='/donate/done')
+      form#form-donate(action='/donate/done')
         h1 Send A Note
-        .input-note
-          label Send A Note to Housing and Services Inc
-          textarea(placeholder='Type a note\u2026')
+        .input-note.input-group
+          label(for='textarea-note') Send A Note to Housing and Services Inc
+          textarea#textarea-note(placeholder='Type a note\u2026')
         button.btn-cta(type='submit')
           | Give Now
     .clear

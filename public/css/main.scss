@@ -43,6 +43,29 @@ textarea {
   resize: vertical;
 }
 
+.input-group {
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.17);
+  text-align: left;
+  padding: 16px;
+  margin: 32px 0;
+  width: 100%;
+
+  label {
+    font-size: 16px;
+    font-weight: normal;
+    color: #6D6D6D;
+    display: block;
+  }
+
+  input, textarea {
+    border: none;
+    font-weight: lighter;
+    width: 100%;
+  }
+}
+
 // Navbar
 // -------------------------
 
