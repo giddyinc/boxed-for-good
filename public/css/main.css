@@ -11,13 +11,7 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
-  margin: 0;
-  background-image: url("/images/giving-min.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 1;
-  background-position:center;
-   }
+  margin: 0; }
 
 article,
 aside,
@@ -5904,8 +5898,7 @@ button.close {
   float: right; }
 
 .pull-left {
-  float: left;
-  color: white; }
+  float: left; }
 
 .fa.pull-left {
   margin-right: .3em; }
@@ -8914,6 +8907,12 @@ html {
   min-height: 100%; }
 
 body {
+  margin: 0;
+  background-image: url("/images/giving-min.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-position: center;
   padding-top: 60px;
   margin-bottom: 75px; }
 
@@ -8945,38 +8944,41 @@ textarea {
 .fa {
   margin-right: 6px; }
 
+.pull-left {
+  float: left;
+  color: white; }
+
+p.step {
+  color: white;
+  font-size: 16px;
+  text-align: initial; }
+
 p.boxed-main-copy, .form-input, .form-label, p.beneficiaries-header, p.hiw-header, p.step {
   text-align: center;
   color: white;
   font-family: sofia-pro, sans-serif;
   font-weight: 100;
-  font-style: normal;
-}
+  font-style: normal; }
 
-p.boxed-main-copy, p.beneficiaries-header, .hiw-header {
-  font-size: 24px;
-}
+p.boxed-main-copy, p.beneficiaries-header, p.hiw-header {
+  font-size: 24px; }
 
 p.beneficiaries-header {
   color: black;
-  padding-top: 20px;
-}
+  padding-top: 20px; }
 
 p.hiw-header {
-  padding-top: 20px;
-}
+  padding-top: 20px; }
 
 .form-input {
   background-color: white;
   border-color: transparent;
   border-radius: 3px;
-  color: gray;
-}
+  color: gray; }
 
 .form-label {
   color: gray;
-  margin-left: 10px;
-}
+  margin-left: 10px; }
 
 .beneficiaries {
   background-color: white;
@@ -8985,8 +8987,7 @@ p.hiw-header {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 500px;
-}
+  top: 500px; }
 
 .how-it-works {
   background-color: #00B9A5;
@@ -8995,29 +8996,20 @@ p.hiw-header {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 800px;
-}
+  top: 800px; }
 
 .search-field {
   margin: 0 auto;
-  display: table;
-}
-
-svg {
-  fill: white;
-}
+  display: table; }
 
 .step-1, .step-2, .step-3 {
   float: left;
   width: 33%;
   padding-left: 120px;
-  padding-top: 10px;
-
-}
+  padding-top: 10px; }
 
 p.step {
   color: white;
   font-size: 16px;
   text-align: initial;
-  justify-content: center;
-}
+  justify-content: center; }
