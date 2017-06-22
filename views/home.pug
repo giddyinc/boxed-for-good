@@ -1,4 +1,8 @@
 extends layout
+
+block styles
+  link(rel='stylesheet', href='/css/home.scss')
+
 block content  
       p(class='boxed-main-copy') Give More Today. 
       p(class='boxed-main-copy') The brand new Boxed initiative for you.
@@ -10,26 +14,29 @@ block content
       div(class='beneficiaries')
         p(class='beneficiaries-header') Our Beneficiaries
            div(class='cards')
+
             div(class='card' id='card-1') Housing and Services Inc
               div(id='card-alt')
                p(class='alt-text') HSI is a nonprofit that has been working to end chronic homelessness and help those at risk of displacement through the operation and development of permanent supportive housing for over 30 years in NYC.
               img(src='/images/hsi-logo.png' id='img')
-              button(class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored donate-btn' id='donate')
-                a(class='no-link' href='/donate') Select
 
             div(class='card' id='card-2') City Harvest <br/>
-              img(src='/images/city-harvest.svg' id='img')
-              button(class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored donate-btn' id='donate') 
-                a(class='no-link' href='/donate') Select
               div(id='card-alt')
                 p(class='alt-text') City Harvest exists to end hunger in communities throughout New York City. We do this through food rescue and distribution, education, and other practical, innovative solutions.
+              img(src='/images/city-harvest.svg' id='img')
 
-            div(class='card' id='card-3') Food Bank New York City
+            div(class='card' id='card-3') Food Bank New York City <br/>
               img(src='/images/foodbank.png' id='img')
-              button(class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored donate-btn' id='donate') 
-                a(class='no-link' href='/donate') Select
               div(id='card-alt')
                 p(class='alt-text') Food Bank For New York City has been working to end food poverty in our five boroughs for more than 30 years. We employ a multifaceted approach centered on helping low-income New Yorkers overcome their circumstances and achieve greater independence.
+            
+            div(class='buttons')
+              button(class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored donate-btn' id='donate') 
+                a(class='no-link' href='/donate') Select
+              button(class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored donate-btn' id='donate') 
+                a(class='no-link' href='/donate') Select
+              button(class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored donate-btn' id='donate') 
+                a(class='no-link' href='/donate') Select
 
 
       div(class='how-it-works')

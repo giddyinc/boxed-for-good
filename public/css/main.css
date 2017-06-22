@@ -9037,7 +9037,7 @@ p.step {
   padding-top: 15px;
   padding-right: 10px;
   vertical-align: middle;
-  margin: 40px; }
+  margin: 30px; }
 
 .card:hover {
   background-color: #FFCA00;
@@ -9057,7 +9057,7 @@ p.step {
   height: 50%;
   width: 65%; }
 
-.cards {
+.cards, .buttons {
   width: 100%;
   text-align: center; }
 
@@ -9071,8 +9071,13 @@ p.step {
   font-style: normal;
   font-weight: 100;
   font-size: 14px;
-  margin: 15px;
   border-radius: 4px; }
+
+.donate-btn {
+  float: left;
+  width: 10%;
+  margin-left: 135px;
+  margin-right: 120px; }
 
 .alt-text {
   font-size: 12px;
