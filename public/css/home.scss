@@ -142,7 +142,7 @@ p.hiw-header {
     justify-content: center;
 
     .step {
-      flex: 1 1 auto;
+      flex: 1 1 0;
       text-align: center;
 
       img {
@@ -242,7 +242,7 @@ p.hiw-header {
 
 }
 
-
+.object-fit_contain { object-fit: contain }
 
 .alt-text {
   font-size: 12px;
