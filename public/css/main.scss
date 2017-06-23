@@ -15,24 +15,44 @@ html {
 
 body {
   margin: 0;
-  background-image: url("/images/giving-min.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
   z-index: 1;
-  background-position:center;
-  padding-top: 60px;
-  margin-bottom: 75px;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
+  background-color: $brand-green;
   width: 100%;
-  height: 45px;
-  line-height: 45px;
+  padding: 36px 0;
 
-  p, ul {
-    margin-bottom: 0;
+  .footer-columns {
+    width: 100%;
+    display: flex;
+
+    .column {
+      flex: 1 1 auto;
+
+      .column-header {
+        text-transform: uppercase;
+        color: $brand-green-darker;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      ul.link-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 18px;
+        font-weight: lighter;
+        line-height: 30px;
+        margin: 24px 0;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 18px;
+    color: $brand-green-darker;
   }
 }
 
@@ -119,151 +139,8 @@ textarea {
   color: white;
 }
 
-p.step {
-  color: white;
-  font-size: 16px;
-  text-align: initial;
-}
-
-p.boxed-main-copy, .form-input, .form-label, p.beneficiaries-header, p.hiw-header, p.step {  
-  text-align: center;  
-  color: white;  
-  font-family: sofia-pro, sans-serif;
-  font-weight: 100;  
-  font-style: normal;
-}
-
-p.boxed-main-copy, p.beneficiaries-header, p.hiw-header {  
-  font-size: 24px;
-}
-p.beneficiaries-header {  
-  color: black;
-  padding-top: 45px;
-}
-
-p.hiw-header {  
-  padding-top: 40px;
-}
-
-.form-input {  
-  background-color: white;  
-  border-color: transparent;  
-  border-radius: 3px;  
-  color: gray;
-}
-
-.form-label {  
-  color: gray;
-  margin-left: 10px;
-}
-
-.beneficiaries {  
-  background-color: white;  
-  height: 400px;
-  z-index: 999;  
-  position: absolute;  
-  width: 100%;  
-  left: 0;
-  top: 500px;
-}
-
-.how-it-works {  
-  background-color: #00B9A5;  height: 300px;  z-index: 999;  position: absolute;  width: 100%;  left: 0; top: 900px;
-}
-
-.search-field {
-  margin: 0 auto;
-  display: table;
-}
-
-.step-1, .step-2, .step-3 {
-  display: inline-block;
-  float: left;
-  width: 33%;
-  padding-left: 120px;
-  padding-top: 10px;
-}
-
- p.step {
-   color: white;
-   font-size: 16px;
-  text-align: initial;
-  justify-content: center;
-}
-
-.card {
-  border: solid 1px #d3d3d3;
-  border-radius: 2px;
-  width: 25%;
-  display: inline-block;
-  height: 200px;
-  text-align: center;
-  padding-top: 15px;
-  padding-right: 10px;
-  vertical-align: middle;
-  margin: 30px;
-
-}
-
-.card:hover {
-  background-color: #FFCA00;
-  transition: background-color 0.5s;
-  cursor: pointer;
-    #card-alt {
-      display: block;
-    }
-  }
-
-.card:hover #img {
-  display: none;
-}
-.card:hover #donate {
-  display: none;
-}
-
-.card img {
-  padding-top: 15px;
-  height: 50%;
-  width: 65%;
-}
-
-.cards, .buttons {
+.boxed-main-header {
+  position: absolute;
+  top: 0;
   width: 100%;
-  text-align: center;
-}
-
-
-#card-alt {
-  display: none;
-  text-align: center;
-  padding-top: 4px;
-}
-
-.donate-btn, .alt-text {
-  font-family: sofia-pro, sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 14px;
-  border-radius: 4px;
- 
-}
-
-.donate-btn {
-   float: left;
-   width: 10%;
-   margin-left: 135px;
-   margin-right: 120px;
-
-}
-
-
-
-.alt-text {
-  font-size: 12px;
-  margin: 8px;
-}
-
-.no-link, a:hover {
-  text-decoration: none;
-  color: white;
 }

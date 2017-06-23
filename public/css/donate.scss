@@ -1,7 +1,20 @@
 @import "themes/default/variables";
 
+.masthead {
+  background-image: url("/images/giving-min.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  min-height: 600px;
+}
+
 .header {
   text-align: center;
+  margin-top: 250px;
 
   h1 {
     color: white;
@@ -182,11 +195,6 @@
       }
     }
   }
-}
-
-.footer {
-  background-color: $brand-green;
-  width: 100%;
 }
 
 @keyframes modalShow {
