@@ -165,7 +165,6 @@ p.hiw-header {
 .card {
   border: solid 1px #d3d3d3;
   border-radius: 2px;
-  width: 25%;
   display: inline-block;
   height: 200px;
   text-align: center;
@@ -173,7 +172,7 @@ p.hiw-header {
   padding-right: 10px;
   vertical-align: middle;
   margin: 30px;
-
+  flex: 1 1 0;
 }
 
 .card:hover {
@@ -200,20 +199,27 @@ p.hiw-header {
 
 .cards {
   width: 100%;
+  display: flex;
   text-align: center;
 }
 
-@media (min-width: 1000px) {
-  .buttons {
-    display: flex;
-    margin: 10px auto;
-    text-align: center;
-    flex-direction: row;
-    justify-content: space-between; /* for horizontal alignment */
-  
+.buttons {
+  display: flex;
+  margin: 10px auto;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .button {
+    flex: 1 1 0;
+
+    a:link, a:hover, a:visited {
+      color: white;
+      text-decoration: none;
+    }
   }
 }
-
 
 #card-alt {
   display: none;
