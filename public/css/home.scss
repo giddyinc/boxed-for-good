@@ -135,26 +135,26 @@ p.hiw-header {
   background-color: #00B9A5;
   height: 300px;
   width: 100%;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .step {
+      flex: 1 1 auto;
+      text-align: center;
+
+      img {
+        max-width: 128px;
+      }
+    }
+  }
 }
 
 .search-field {
   margin: 0 auto;
   display: table;
-}
-
-.step-1, .step-2, .step-3 {
-  display: inline-block;
-  float: left;
-  width: 33%;
-  padding-left: 120px;
-  padding-top: 10px;
-}
-
- p.step {
-   color: white;
-   font-size: 16px;
-   text-align: initial;
-   justify-content: center;
 }
 
 .card {
