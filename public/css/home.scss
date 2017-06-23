@@ -76,12 +76,6 @@ textarea {
   color: white;
 }
 
-p.step {
-  color: white;
-  font-size: 16px;
-  text-align: initial;
-}
-
 p.boxed-main-copy, .form-input, .form-label, p.beneficiaries-header, p.hiw-header, p.step {  
   text-align: center;  
   color: white;  
@@ -133,7 +127,6 @@ p.hiw-header {
 
 .how-it-works {  
   background-color: #00B9A5;
-  height: 300px;
   width: 100%;
 
   .container {
@@ -144,9 +137,21 @@ p.hiw-header {
     .step {
       flex: 1 1 0;
       text-align: center;
+      color: white;
+      font-size: 18px;
+      margin: 64px 64px;
+
+      .step-number {
+        font-size: 20px;
+      }
+
+      .step-description {
+        font-weight: lighter;
+      }
 
       img {
-        max-width: 128px;
+        max-width: 96px;
+        margin: 16px;
       }
     }
   }
