@@ -8994,3 +8994,22 @@ textarea {
   position: absolute;
   top: 0;
   width: 100%; }
+  .boxed-main-header .header-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .boxed-main-header .header-flex .logo {
+      display: block;
+      margin: 16px;
+      flex: 0 0 auto; }
+    .boxed-main-header .header-flex .for-good {
+      color: white;
+      margin: 0;
+      flex: 1 1 auto; }
+    .boxed-main-header .header-flex .btn-visit-boxed {
+      background: none;
+      border: solid 1px white;
+      border-radius: 8px;
+      color: white;
+      text-transform: uppercase;
+      padding: 8px 24px; }
