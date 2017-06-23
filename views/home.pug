@@ -3,14 +3,19 @@ extends layout
 block styles
   link(rel='stylesheet', href='/css/home.css')
 
+block scripts
+  script(src='/js/home.js')
+
+
 block content
   .masthead
     div
       p(class='boxed-main-copy') Give More Today. 
       p(class='boxed-main-copy') The brand new Boxed initiative for you.
       form(action='#' role='search')
-        div(class='mdl-textfield mdl-js-textfield search-field')
-          input(class='mdl-textfield__input form-input' type='text' id='text1' placeholder='Search Charities...')
+        div(class='search-field')
+          input(class='form-input form-autocomplete' type='search' id='form-autcomplete' placeholder='Search Charities...')
+  
 
   div(class='beneficiaries')
     p(class='beneficiaries-header') Our Beneficiaries
