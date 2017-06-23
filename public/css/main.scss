@@ -263,3 +263,150 @@
 //   text-decoration: none;
 //   color: white;
 // }
+=======
+@import "themes/default/variables";
+
+@import "lib/bootstrap/bootstrap";
+@import "lib/font-awesome/font-awesome";
+
+@import "themes/default/default";
+
+// Scaffolding
+// -------------------------
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  z-index: 1;
+}
+
+footer {
+  background-color: $brand-green;
+  width: 100%;
+  padding: 36px 0;
+
+  .footer-columns {
+    width: 100%;
+    display: flex;
+
+    .column {
+      flex: 1 1 auto;
+
+      .column-header {
+        text-transform: uppercase;
+        color: $brand-green-darker;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      ul.link-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 18px;
+        font-weight: lighter;
+        line-height: 30px;
+        margin: 24px 0;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 18px;
+    color: $brand-green-darker;
+  }
+}
+
+// Input Fields
+// -------------------------
+
+textarea {
+  resize: vertical;
+}
+
+.input-group {
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.17);
+  text-align: left;
+  padding: 16px;
+  margin: 32px 0;
+  width: 100%;
+
+  label {
+    font-size: 16px;
+    font-weight: normal;
+    color: #6D6D6D;
+    display: block;
+  }
+
+  input, textarea {
+    border: none;
+    font-weight: lighter;
+    width: 100%;
+  }
+}
+
+// Navbar
+// -------------------------
+
+.navbar-nav img {
+  width: 30px;
+  height: 30px;
+  margin: -15px 15px -15px;
+}
+
+// Alerts
+// -------------------------
+
+.alert {
+  margin-top: 20px;
+}
+
+// Thumbnails
+// -------------------------
+
+.thumbnail {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 0 5px #ccc, inset 0 0 0 #000;
+}
+
+// Font Icons
+// -------------------------
+
+.fa {
+  margin-right: 6px;
+}
+
+// Buttons
+// -------------------------
+
+.btn-cta {
+  background-color: $brand-green;
+  border: none;
+  border-radius: 48px;
+  min-height: 96px;
+  font-size: 48px;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 96px;
+  line-height: 96px;
+  font-weight: bold;
+}
+
+.pull-left {
+  float: left;
+  color: white;
+}
+
+.boxed-main-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
