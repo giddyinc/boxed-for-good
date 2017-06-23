@@ -114,10 +114,12 @@ p.hiw-header {
   margin-left: 10px;
 }
 
+@media (min-width: 1000px) {
 .beneficiaries {  
   background-color: white;
   height: 400px;
   width: 100%;
+}
 }
 
 .how-it-works {  
@@ -182,13 +184,20 @@ p.hiw-header {
   width: 65%;
 }
 
-.cards, .buttons {
+.cards {
   width: 100%;
   text-align: center;
 }
 
-.buttons {
-  display: flex;
+@media (min-width: 1000px) {
+  .buttons {
+    display: flex;
+    margin: 10px auto;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between; /* for horizontal alignment */
+  
+  }
 }
 
 
@@ -204,11 +213,25 @@ p.hiw-header {
   font-weight: 100;
   font-size: 14px;
   border-radius: 4px;
-  margin-left: 130px;
-  margin-right: 130px;
+  // margin-left: 130px;
+  // margin-right: 130px;
  
 }
 
+.donate-btn {
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.left-btn {
+  left: 180px;
+}
+
+.right-btn {
+  right: 180px;
+
+}
 
 
 
