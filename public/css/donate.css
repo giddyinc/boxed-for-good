@@ -1,5 +1,17 @@
+.masthead {
+  background-image: url("/images/giving-min.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  min-height: 600px; }
+
 .header {
-  text-align: center; }
+  text-align: center;
+  margin-top: 250px; }
   .header h1 {
     color: white;
     font-size: 56px;
@@ -126,10 +138,6 @@
       .endorsement .container .text-box p.attribution {
         text-align: right;
         margin-top: 64px; }
-
-.footer {
-  background-color: #00B9A5;
-  width: 100%; }
 
 @keyframes modalShow {
   from {
