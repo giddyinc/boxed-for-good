@@ -175,6 +175,9 @@ p.step {
 .right-btn {
   right: 180px; }
 
+.object-fit_contain {
+  object-fit: contain; }
+
 .alt-text {
   font-size: 12px;
   margin: 8px; }
