@@ -130,11 +130,14 @@
   padding-top: 200px;
 
   .container {
+    display: flex;
     text-align: center;
     color: $brand-green;
+    align-items: center;
+    justify-content: center;
 
     p {
-      margin: 48px;
+      margin: 48px 24px;
       font-size: 24px;
       font-weight: bold;
       line-height: 32px;
