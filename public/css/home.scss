@@ -90,6 +90,8 @@ p.boxed-main-copy, .form-input, .form-label, p.beneficiaries-header, p.hiw-heade
   font-style: normal;
 }
 
+
+
 p.boxed-main-copy, p.beneficiaries-header, p.hiw-header {  
   font-size: 24px;
 }
@@ -107,7 +109,14 @@ p.hiw-header {
   border-color: transparent;  
   border-radius: 3px;  
   color: gray;
+  height: 50px;
+  width: 400px;
+  font-size: 22px;
+  text-align: center;
+  left: -200px;
 }
+
+
 
 .form-label {  
   color: gray;
@@ -243,4 +252,11 @@ p.hiw-header {
 .no-link, a:hover {
   text-decoration: none;
   color: white;
+}
+
+.fa-search {
+  position: relative;
+  z-index: 1;
+  left: -385px;
+  color: gray;
 }

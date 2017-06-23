@@ -3,10 +3,6 @@ extends layout
 block styles
   link(rel='stylesheet', href='/css/home.css')
 
-block scripts
-  script(src='/js/home.js')
-
-
 block content
   .masthead
     div
@@ -14,8 +10,12 @@ block content
       p(class='boxed-main-copy') The brand new Boxed initiative for you.
       form(action='#' role='search')
         div(class='search-field')
-          input(class='form-input form-autocomplete' type='search' id='form-autcomplete' placeholder='Search Charities...')
-  
+          input(class='form-input form-autocomplete' type='text' id='form-autcomplete' placeholder='Search Charities...' list='charities')
+          i(id='search' class='fa fa-search fa-2x')
+          datalist(id='charities')
+            option(value='Housing and Services Inc')
+            option(value='City Harvest')
+            option(value='Foodbank NYC')
 
   div(class='beneficiaries')
     p(class='beneficiaries-header') Our Beneficiaries
